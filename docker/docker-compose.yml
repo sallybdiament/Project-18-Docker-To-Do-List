@@ -1,11 +1,22 @@
 version: 'X'
 services:
-  app_A:
-    # ...
-    # parâmetros
-    # ...
-  app_B:
-    # ...
-    # parâmetros
-    # ...
-  # ...
+  frontend: 
+    build: todofrontend
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_API_HOST=todobackend
+    depends_on:
+      - backend
+  backend:
+    build: todobackend
+    ports:
+      - 3001:3001
+  tests:
+    build: todotests
+    environment:
+      - FRONT_HOST=frontend
+    depends_on:
+      - backend
+      - frontend
+      
