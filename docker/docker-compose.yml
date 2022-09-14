@@ -5,8 +5,8 @@ services:
     environment:
       - FRONT_HOST=todofront
     depends_on:
-      - backend
-      - frontend
+      - todoback
+      - todofront
   todofront: 
     image: todofrontend
     ports:
@@ -14,7 +14,7 @@ services:
     environment:
       - REACT_APP_API_HOST=todoback
     depends_on:
-      - backend
+      - todoback
   todoback:
     image: todobackend
     ports:
