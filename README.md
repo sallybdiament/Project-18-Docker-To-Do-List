@@ -1,13 +1,14 @@
 # Docker - Back-End Project
 
 Coomandos do docker CLI com diferentes níveis de complexidade.
-
-Conteinerizar uma aplicações front, back e de testes e criar uma conexão entre elas;
+![Logo Docker](./docker-logo.png)
+Conteinerizar (empacotar) uma aplicações front, back e de testes e criar uma conexão entre elas;
 Orquestrar seu funcionamento.
 
 Projeto 18 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 
-![Avaliação com 100% dos requisitos completos](./percentual-requisitos.png)
+![Avaliação com 100% dos requisitos completos](./percentual-avaliacao.png)
+![Requisitos avaliados](./requisitos-avaliados.png)
 ## O Projeto
 
 #### Comandos CLI de Docker:
