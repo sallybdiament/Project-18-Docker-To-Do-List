@@ -1,1 +1,23 @@
 docker container create -i --name 01container alpine:3.12
+
+docker container start 01container
+
+docker ps --filter "name=01container"
+
+docker exec 01container cat /etc/os-release
+
+docker rm -f 01container
+
+docker pull nginx:1.21.3-alpine
+
+docker run -p 3000:80 -d --name 02images nginx:1.21.3-alpine
+
+docker container stop 02images
+
+docker build -t todobackend ./todo-app/back-end/
+
+docker build -t todofrontend ./todo-app/front-end/
+
+docker build -t todotests ./todo-app/tests/
+
+docker-compose up -d
