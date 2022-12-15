@@ -2,13 +2,15 @@
 
 Coomandos do docker CLI com diferentes níveis de complexidade.
 ![Logo Docker](./docker-logo.png)
+
+
 Conteinerizar (empacotar) uma aplicações front, back e de testes e criar uma conexão entre elas;
 Orquestrar seu funcionamento.
 
 Projeto 18 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 
 ![Avaliação com 100% dos requisitos completos](./percentual-avaliacao.png)
-![Requisitos avaliados](./requisitos-avaliados.png)
+
 ## O Projeto
 
 #### Comandos CLI de Docker:
@@ -27,6 +29,8 @@ Projeto 18 da [Trybe](https://wwww.betrybe.com), módulo de Back-End.
 #### Docker-compose:
 - Criar um arquivo `docker-compose.yml` com as imagens e nome dos containers para as aplicações de front, back e testes
 - Para subir os container em segundo plano, comando cli: `docker-compose up -d`
+
+![Requisitos avaliados](./requisitos-avaliados.png)
 
 ## Instalação 
 
